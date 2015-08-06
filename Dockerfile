@@ -11,7 +11,7 @@ RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.
 VOLUME ["/root/.aws"]
 
 # Configure it
-# docker run --rm -it -v $HOME/.aws:/root/.aws mpercival/ebcli aws configure
+# docker run --rm -it -v $HOME/.aws:/root/.aws mpercival/awscli aws configure
 
 # Run it like so...
-# docker run --rm -it -v $HOME/.aws:/root/.aws mpercival/ebcli eb init
+# docker run --rm -it -v $HOME/.aws:/root/.aws mpercival/awscli eb init
